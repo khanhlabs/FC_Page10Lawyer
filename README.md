@@ -1,4 +1,4 @@
-# Fastcoding VN - Coding Test
+# Fastcoding - Coding Test
 
 ## 1. Project Overview
 
