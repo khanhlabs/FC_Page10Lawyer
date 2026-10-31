@@ -19,6 +19,7 @@ Page10Lawyer/
 ├── assets
 |   ├── icons
 |   ├── images
+|   ├── logos
 |
 ├── css/
 │   ├── style.css
