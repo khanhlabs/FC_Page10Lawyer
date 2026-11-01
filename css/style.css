@@ -58,7 +58,7 @@ img {
 
 /* LAYOUT */
 .wrapper {
-    width: min(100% - 30px, 1140px);
+    width: min(100% - 30px, 1170px);
      margin-inline: auto;
 }
 
