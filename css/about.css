@@ -1,0 +1,35 @@
+.section-about{
+    background: #F0F1F3;
+}
+
+.section-about .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    gap: 100px;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+}
+
+.about-content .title-secondary{
+    text-align: left;
+}
+
+.about-content .description-secondary{
+    text-align: left;
+}
+
+.about-image img{
+    width: 570px;
+    height: 500px;
+    border-radius: 12px;
+}
+

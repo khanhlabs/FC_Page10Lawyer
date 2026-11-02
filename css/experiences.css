@@ -1,0 +1,57 @@
+.section-experiences .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 0 100px;
+    gap: 50px;
+}
+
+.experiences-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 70px;
+}
+
+.experiences-image img{
+    width: 500px;
+    height: auto;
+}
+
+.experiences-list{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.experiences-item{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.experiences-meta{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.experiences-meta a{
+    font-weight: var(--font-weight-primary);
+    font-size: var(--text-content-secondary);
+    line-height: 24px;
+    color: var(--text-active);
+    width: 200px;
+    max-width: 200px;
+}
+
+
+.experiences-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
