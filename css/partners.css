@@ -15,8 +15,21 @@
 }
 
 .partners-title h2 strong{
+    position: relative;
     color: var(--text-active);
     font-weight: var(--font-weight-primary);
+}
+
+.partners-title h2 strong::after{
+    content: "";
+    position: absolute;
+    top: 29px;
+    left: -4px;
+    width: 105%;
+    height: 12px;
+    background-color: rgba(23, 119, 229, 0.121);
+    transform: scaleX(1);
+    transition: transform 0.3s ease;
 }
 
 .partners-logo{
