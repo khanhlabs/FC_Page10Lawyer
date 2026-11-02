@@ -37,6 +37,7 @@ img {
     --text-statistics-desc: rgba(135, 144, 157, 1);
     --text-footer-nav-item: var(--text-statistics-desc);
     --text-placeholder: var(--text-statistics-desc);
+    --text-footer-link: var(--text-statistics-desc);
 
     --text-title: rgba(19, 34, 56, 1);
 
