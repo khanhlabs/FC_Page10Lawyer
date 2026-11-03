@@ -609,16 +609,19 @@
                         </div>
 
                         <form class="booking-form">
-                            <div class="double-field name-email">
-                                <input type="text" placeholder="Full Name">
-                                <input type="email" placeholder="Email Adress">
-                            </div>
-                            <input type="text" placeholder="Subject">
-                            <div class="double-field date-time">
-                                <input type="date" placeholder="Date">
-                                <input type="text" placeholder="Time">
-                            </div>
-                            <textarea placeholder="Message"></textarea>
+                            <input type="text" placeholder="Full Name">
+                            <input type="email" placeholder="Email Address">
+                            <input type="text" class="full-field" placeholder="Subject">
+                            <input type="date" class="date-field">
+                            <select class="time-field">
+                                <option value="" disabled selected>Time</option>
+                                <option value="09:00">09:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="14:00">02:00 PM</option>
+                                <option value="15:00">03:00 PM</option>
+                            </select>
+                            <textarea class="full-field" placeholder="Message"></textarea>
                         </form>
 
                         <a href="#" class="btn-primary">
