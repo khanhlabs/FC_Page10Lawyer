@@ -17,6 +17,7 @@
     align-items: flex-start;
     padding: 0px;
     gap: 30px;
+    width: 100%;
 }
 
 .blog-card{
@@ -24,6 +25,16 @@
     flex-direction: column;
     background: var(--white-color);
     border-radius: 4px;
+    flex: 1;
+    min-width: 0;
+}
+
+.card-img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 370 / 264;
+    height: auto;
+    object-fit: cover;
 }
 
 .card-content{
@@ -79,4 +90,64 @@
     line-height: 48px;
     text-transform: uppercase;
     color: var(--text-active);
+}
+
+/* --------------------RESPOSIVE---------------- */
+@media (max-width: 1300px) {
+    .card-content {
+        padding: 20px;
+        gap: 3px;
+    }
+
+    .card-date-time span {
+        font-size: 13px;
+    }
+
+    .card-title {
+        font-size: 20px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 1060px) {
+    .blog-cards {
+        gap: 15px;
+    }
+
+    .card-content {
+        padding: 15px;
+        gap: 1px;
+    }
+
+    .card-date-time span {
+        font-size: 12px;
+    }
+
+    .card-title {
+        font-size: 19px;
+        line-height: 20px;
+    }
+
+    .card-description {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 960px) {
+    .section-blog .wrapper{
+        max-width: 70%;
+    }
+
+    .blog-cards{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 460px) {
+    .section-blog .wrapper{
+        max-width: 90%;
+    }
 }
