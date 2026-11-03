@@ -32,6 +32,11 @@
     gap: 12px;
 }
 
+.experiences-devider{
+    border: none;
+    border-top: 1px solid #E6E8EB;
+}
+
 .experiences-meta{
     display: flex;
     flex-direction: column;

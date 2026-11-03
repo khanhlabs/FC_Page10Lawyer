@@ -156,6 +156,11 @@
     border-radius: 4px;
 }
 
+.social-item a:hover{
+    opacity: 0.7;
+    transition: all 0.2s ease-in-out;
+}
+
 .menu-toggle {
     display: none;
     align-items: center;
@@ -167,6 +172,13 @@
 }
 
 /* -----------------------------RESPONSIVE---------------------------- */
+
+@media (max-width: 1110px) {
+    .header{
+        height: 85px;
+    }
+}
+
 
 @media (max-width: 1040px){
     .header .wrapper{
@@ -215,7 +227,6 @@
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         z-index: 100;
 
-        /* Trạng thái đóng */
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
