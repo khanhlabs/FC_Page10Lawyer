@@ -45,7 +45,12 @@
 
 .education-symbol img{
     width: 40px;
-    height: 40px;
+    height: auto;
+}
+
+.education-symbol img,
+.awards-image img{
+    max-width: none;
 }
 
 .awards-list{
@@ -102,4 +107,129 @@
 
 .education-content .description-titernary{
     color: var(--text-lighter);
+}
+
+/* --------------------------RESPONSIVE--------------------- */
+@media (max-width: 1155px) {
+    .education-awards-info {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .section-education-awards .wrapper {
+        padding: 80px 0;
+        gap: 40px;
+    }
+
+    .section-header {
+        gap: 7px;
+    }
+
+    .education-item {
+        gap: 12px;
+    }
+
+    .education-symbol {
+        padding: 20px;
+    }
+
+    .list-date-time-primary {
+        font-size: 13px;
+    }
+
+    .education-symbol img {
+        width: 35px;
+        height: auto;
+    }
+
+    .education-content, .awards-content {
+        gap: 0;
+    }
+
+    .awards-item {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .awards-image img {
+        max-width: none;
+        width: 110px;
+        height: auto;
+    }
+
+    .title-titernary {
+        font-size: 18px;
+    }
+
+    .description-titernary {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 920px) {
+    .education-awards-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .education-list {
+        gap: 15px;
+        max-width: 90%;
+    }
+
+    .awards-list {
+        gap: 20px;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-symbol {
+        padding: 15px;
+    }
+
+    .education-symbol img {
+        width: 30px;
+        height: auto;
+    }
+
+    .list-date-time-primary {
+        font-size: 11px;
+        line-height: 11px;
+    }
+
+    .title-titernary {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .description-titernary {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .education-content, .awards-content {
+        gap: 3px;
+    }
+
+    .awards-image img {
+        max-width: none;
+        width: 80px;
+        height: auto;
+    }
+
+    .awards-item {
+        padding: 13px;
+        gap: 15px;
+    }
+
+    .education-awards-info {
+        gap: 27px;
+    }
 }
