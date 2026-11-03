@@ -77,14 +77,61 @@
 
 /* -----------------------RESPONSIVE--------------------- */
 @media (max-width: 1130px) {
+    .section-partners .wrapper {
+        gap: 45px;
+    }
+
     .logo-list{
+        gap: 60px;
+    }
+
+    .section-partners .wrapper {
+        align-items: center;
+    }
+
+    .partners-title h2 {
+        max-width: 100%;
+        font-size: 30px;
+    }
+
+    .logo-item a img {
+        width: 100px;
+    }
+
+}
+
+@media (max-width: 940px) {
+    .section-partners .wrapper {
+        padding: 80px 0;
+    }
+
+    .logo-list {
         gap: 40px;
     }
+
+    .section-partners .wrapper {
+        gap: 35px;
+    }
+
 }
 
 @media (max-width: 880px) {
+    .section-partners .wrapper {
+        padding: 70px 0;
+    }
+
     .logo-list{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .partners-title h2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 350px) {
+    .partners-title h2 {
+        font-size: 24px;
     }
 }
