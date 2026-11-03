@@ -12,8 +12,8 @@
 }
 
 .testimonials-info{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     justify-content: space-between;
     align-items: center;
     padding: 0px;
@@ -25,8 +25,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 770px;
-    max-width: 770px;
+    max-width: 100%;
     padding: 0px;
     gap: 24px;
     margin: 0 auto;
@@ -39,8 +38,6 @@
     padding: 16px;
     gap: 10px;
     margin: 0 auto;
-    width: 56px;
-    height: 56px;
     background: #E8F1FC;
     border-radius: 100px;
 }
@@ -73,4 +70,125 @@
     line-height: 20px;
     text-align: center;
     color: #697484;
+}
+
+/* --------------------------RESPONSIVE----------------------- */
+@media (max-width: 1260px) {
+    .testimonials-info {
+        gap: 120px;
+    }
+}
+
+@media (max-width: 1160px) {
+    .section-header {
+        gap: 10px;
+    }
+
+    .testimonials-info{
+        gap: 90px;
+    }
+
+    .section-testimonials .wrapper {
+        gap: 40px;
+    }
+
+    .testimonials-content img{
+        width: 33px;
+        height: auto;
+    }
+
+    .title-secondary {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .description-secondary {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .testimonials-quote {
+        font-size: 23px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .testimonials-info {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .testimonials-content {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        max-width: 75%;
+    }
+
+    .btn-slider {
+        grid-row: 2;
+    }
+
+    .btn-slider:last-child {
+        justify-self: end;
+    }
+
+    .testimonials-info {
+        gap: 40px;
+    }
+
+    .section-testimonials .wrapper{
+        gap: 30px;
+    }
+    
+    .testimonials-quote {
+        font-size: 21px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 725px) {
+    .testimonials-content img {
+        width: 25px;
+        height: auto;
+    }
+
+    .testimonials-quote {
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    .testimonials-content {
+        gap: 17px;
+    }
+
+    .author {
+        gap: 2px;
+    }
+
+    .author-name {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .author-job {
+        font-weight: var(--font-weight-secondary);
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        color: #697484;
+    }
+
+    .btn-slider {
+        justify-self: center;;
+    }
+
+    .btn-slider img{
+        width: 20px;
+        height: auto;
+    }
+    
+    .testimonials-info {
+        column-gap: 0;
+        row-gap: 40px;
+    }
 }
