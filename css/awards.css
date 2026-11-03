@@ -112,7 +112,11 @@
 /* --------------------------RESPONSIVE--------------------- */
 @media (max-width: 1155px) {
     .education-awards-info {
-        gap: 30px;
+        gap: 17px;
+    }
+
+    .education-list{
+        gap: 17px;
     }
 }
 

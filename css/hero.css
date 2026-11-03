@@ -79,7 +79,8 @@
     }
 
     .keyvisual-actions{
-        justify-content: center
+        justify-content: center;
+        flex-direction: column;
     }
 
     .keyvisual-image img{
@@ -97,7 +98,8 @@
 
     .keyvisual-actions .btn-primary,
     .keyvisual-actions .btn-outline{
-        padding: 0px 24px;
+        width: 100%;
+        padding: 5px 24px;
         gap: 6px;
         border-radius: 5px;
         font-size: var(--text-content-tertinary);

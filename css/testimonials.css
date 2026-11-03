@@ -114,23 +114,7 @@
 }
 
 @media (max-width: 1100px) {
-    .testimonials-info {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .testimonials-content {
-        grid-column: 1 / -1;
-        grid-row: 1;
-        max-width: 75%;
-    }
-
-    .btn-slider {
-        grid-row: 2;
-    }
-
-    .btn-slider:last-child {
-        justify-self: end;
-    }
+    
 
     .testimonials-info {
         gap: 40px;
@@ -186,9 +170,5 @@
         width: 20px;
         height: auto;
     }
-    
-    .testimonials-info {
-        column-gap: 0;
-        row-gap: 40px;
-    }
+
 }

@@ -47,6 +47,10 @@
     gap: 24px;
 }
 
+.contact-list li{
+    width: 100%;
+}
+
 .contact-item{
     display: flex;
     flex-direction: row;
@@ -167,7 +171,7 @@
     color: var(--text-title);
 }
 
-/* ----------------------------RESPOSIVE--------------------- */
+/* ----------------------------RESPOSIVE-----------------
 
 
 /* ---------------- TABLET ---------------- */
@@ -189,6 +193,10 @@
 
     .contact-item {
         max-width: 100%;
+    }
+
+    .btn-primary{
+        width: 100%;
     }
 }
 

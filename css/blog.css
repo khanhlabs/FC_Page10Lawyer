@@ -145,6 +145,10 @@
         display: grid;
         grid-template-columns: 1fr;
     }
+
+    .card-action{
+        width: 100%;
+    }
 }
 
 @media (max-width: 460px) {
