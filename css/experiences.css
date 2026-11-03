@@ -29,12 +29,12 @@
 .experiences-item{
     display: flex;
     align-items: flex-start;
+    padding-bottom: 32px;
     gap: 12px;
 }
 
-.experiences-devider{
-    border: none;
-    border-top: 1px solid #E6E8EB;
+.experiences-item:not(:last-child){
+    border-bottom: 1px solid #E6E8EB;
 }
 
 .experiences-meta{
