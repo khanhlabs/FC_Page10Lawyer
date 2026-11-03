@@ -44,7 +44,7 @@
     gap: 8px;
 }
 
-.experiences-meta a{
+.experiences-meta p{
     font-weight: var(--font-weight-primary);
     font-size: var(--text-content-secondary);
     line-height: 24px;

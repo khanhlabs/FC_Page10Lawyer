@@ -10,7 +10,7 @@
 .statistics-list{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .statistics-item{
@@ -37,7 +37,7 @@
 .statistics-info span{
     font-weight: 500;
     font-size: var(--text-statistics-desc);
-    line-height: 14px;
+    line-height: 1.5;
     text-transform: uppercase;
     color: #87909D;
 }
