@@ -1,10 +1,11 @@
 const menuToggle = document.querySelector(".menu-toggle");
 const navbarNav = document.querySelector(".navbar-nav");
+const navbarMenu = document.querySelector(".navbar-menu");
 const navLinks = document.querySelectorAll(".nav-item a");
 
 // Toggle menu
 menuToggle.addEventListener("click", () => {
-    const isOpen = navbarNav.classList.toggle("is-open");
+    const isOpen = navbarMenu.classList.toggle("is-open");
 
     menuToggle.setAttribute("aria-expanded", isOpen);
     menuToggle.setAttribute(
@@ -24,7 +25,7 @@ navLinks.forEach(link => {
 document.addEventListener("click", (event) => {
     if (
         !menuToggle.contains(event.target) &&
-        !navbarNav.contains(event.target)
+        !navbarMenu.contains(event.target)
     ) {
         closeMenu();
     }
@@ -32,7 +33,7 @@ document.addEventListener("click", (event) => {
 
 // Close menu
 function closeMenu() {
-    navbarNav.classList.remove("is-open");
+    navbarMenu.classList.remove("is-open");
 
     menuToggle.setAttribute("aria-expanded", "false");
     menuToggle.setAttribute("aria-label", "Open navigation");
