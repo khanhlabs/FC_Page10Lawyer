@@ -15,7 +15,7 @@
         <header class="header">
             <div class="wrapper">
                 <nav class="navbar">
-                    <a href="#" class="navbar-logo">
+                    <a href="#" class="navbar-logo trans">
                         <div class="logo-icon">
                             <span>W</span>
                         </div>
@@ -39,19 +39,19 @@
 
                         <ul class="navbar-socials">
                             <li class="social-item trans">
-                                <a href="#">
+                                <a href="https://www.facebook.com/">
                                     <img src="./assets/icons/blue-facebook-icon.svg" alt="facebook-icon"
                                     aria-label="Facebook" width="16" height="16" loading="eager">
                                 </a>
                             </li>
                             <li class="social-item trans">
-                                <a href="#">
+                                <a href="https://x.com/">
                                     <img src="./assets/icons/blue-twitter-icon.svg" alt="twitter-icon"
                                     aria-label="Twitter" width="16" height="16" loading="eager">
                                 </a>
                             </li>
                             <li class="social-item trans">
-                                <a href="#">
+                                <a href="https://www.linkedin.com/">
                                     <img src="./assets/icons/blue-linkedin-icon.svg" alt="linkedin-icon"
                                     aria-label="Linkedin" width="16" height="16" loading="eager">
                                 </a>
@@ -80,7 +80,7 @@
                     <div class="keyvisual-info">
                         <div class="keyvisual-info-container">
                             <h1 class="keyvisual-title">
-                                Hello, I’m a professional lawyer for almost <strong>13 years.</strong>
+                                Hello, I’m a professional lawyer for almost <br class="mobile-break"> <strong>13 years.</strong>
                             </h1>
 
                             <p class="keyvisual-description">
@@ -114,8 +114,10 @@
                 <div class="wrapper">
                     <div class="partners-title">
                         <h2>
-                            I helped <strong>280+ peoples</strong> to win
-                            their fair and they are happy <span class="emoji">😀</span>.
+                            <span>
+                                I helped <strong>280+ peoples</strong> to win their fair and they are <span class="partners-title__ending">happy
+                                <img src="./assets/icons/smiley-icon.svg" alt="smiley-icon" width="40" height="40" loading="lazy">.</span>
+                            </span>
                         </h2>
                     </div>
                     <div class="partners-logo">
@@ -267,7 +269,7 @@
                         </li>
                         <li class="statistics-item">
                             <div class="statistics-icon">
-                                <img src="./assets/icons/smiley-icon.svg" alt="smiley-icon"
+                                <img src="./assets/icons/SmileyWink.svg" alt="smiley-icon"
                                 width="40" height="40" loading="lazy">
                             </div>
                             <div class="statistics-info">
@@ -370,14 +372,13 @@
                                     </div>
                                     <div class="education-content">
                                         <div class="list-date-time-primary">
-                                            <p>2016 to 2021</p>  
+                                            <p>2010 to 2012</p>  
                                             <p>•</p>
-                                            <p>University of Oxford</p>
+                                            <p>University of Cambridge</p>
                                         </div>
-                                        <h3 class="title-titernary">Bachelor of Laws (LLB)</h3>
+                                        <h3 class="title-titernary">Bachelor of Communication</h3>
                                         <p class="description-titernary">
-                                            Mauris efficitur, felis eu commodo vehicula, arcu nunc vehicula nulla, 
-                                            at commodo tortor ligula id sapien.
+                                            Donec ut ex eu libero euismod dapibus id quis ipsum. Phasellus non feugiat turpis, non gravida. 
                                         </p>
                                     </div>
                                 </li>
@@ -438,10 +439,16 @@
                         </p>
                     </div>
                     <div class="testimonials-info">
-                        <a href="#" class="btn-slider trans">
-                            <img src="./assets/icons/arrow-left-icon.svg" alt="arrow-left-icon"
-                            width="24" height="24" loading="lazy">
-                        </a>
+                        <div class="testimonials-actions">
+                            <a href="#" class="btn-slider left trans">
+                                <img src="./assets/icons/arrow-left-icon.svg" alt="arrow-left-icon"
+                                width="24" height="24" loading="lazy">
+                            </a>
+                            <a href="#" class="btn-slider right trans">
+                                <img src="./assets/icons/arrow-right-icon.svg" alt="arrow-right-icon"
+                                width="24" height="24" loading="lazy">
+                            </a>
+                        </div>
                         <div class="testimonials-content">
                             <img src="./assets/icons/quote-icon.svg" alt="quote-icon"
                             width="40" height="40" loading="lazy">
@@ -456,10 +463,6 @@
                                 <span class="author-job">Ceo & Founder of Google</span>
                             </div>
                         </div>
-                        <a href="#" class="btn-slider trans">
-                            <img src="./assets/icons/arrow-right-icon.svg" alt="arrow-right-icon"
-                            width="24" height="24" loading="lazy">
-                        </a>
                     </div>
                 </div>
             </section>
@@ -599,7 +602,9 @@
                             <input type="text" placeholder="Full Name">
                             <input type="email" placeholder="Email Address">
                             <input type="text" class="full-field" placeholder="Subject">
-                            <input type="date" class="date-field">
+                            <div class="date-picker">
+                                <input type="text" class="date-field" placeholder="Date" readonly>
+                            </div>
                             <select class="time-field">
                                 <option value="" disabled selected>Time</option>
                                 <option value="09:00">09:00 AM</option>
@@ -633,8 +638,8 @@
                     </a>
                     <div class="footer-links">
                         <ul class="link-list">
-                            <li class="link-item">
-                                <a href="#">Home</a>
+                            <li class="link-item active">
+                                <a href="#" class="active-link">Home</a>
                             </li>
                             <li class="link-item">
                                 <a href="#">About</a>
@@ -656,21 +661,21 @@
                     <div class="footer-socials">
                         <ul class="social-list">
                             <li class="list-item">
-                                <a href="#" class="trans" target="_blank">
+                                <a href="https://www.facebook.com/" class="trans" target="_blank">
                                     <img src="./assets/icons/white-facebook-icon.svg" alt="facebook-icon"
                                     width="16" height="16" loading="lazy"
                                     >
                                 </a>
                             </li>
                             <li class="list-item">
-                                <a href="#" class="trans" target="_blank">
+                                <a href="https://x.com/" class="trans" target="_blank">
                                     <img src="./assets/icons/white-twitter-icon.svg" alt="twitter-icon"
                                     width="16" height="16" loading="lazy"
                                     >
                                 </a>
                             </li>
                             <li class="list-item">
-                                <a href="#" class="trans" target="_blank">
+                                <a href="https://www.linkedin.com/" class="trans" target="_blank">
                                     <img src="./assets/icons/white-linkedin-icon.svg" alt="linkedin-icon"
                                     width="16" height="16" loading="lazy"
                                     >
