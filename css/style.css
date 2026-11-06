@@ -664,7 +664,7 @@ h2 img {
     height: 35px;
     display: inline-block;
     vertical-align: middle;
-    margin-left: -45px;
+    margin-left: -5px;
 }
 
 .partners-title__ending {
@@ -909,7 +909,7 @@ h2 img {
 
 @media (max-width: 1030px) {
     .experiences-info{
-        gap: 0;
+        gap: 90px;
     }
 }
 
@@ -938,9 +938,9 @@ h2 img {
     }
 
     .experiences-container{
-        max-width: 80%;
         display: flex;
         justify-content: center;
+        width: 80%;
     }
     
     .experiences-info{
@@ -1539,6 +1539,10 @@ h2 img {
         justify-content: space-between;
         align-items: center;
         gap: 40px;
+    }
+
+    .education-container{
+        width: 100%;
     }
 
     .education-list {
@@ -2316,6 +2320,7 @@ h2 img {
 
     .contact,
     .booking {
+        align-items: center;
         width: 100%;
         max-width: 700px;
         margin: 0 auto;
@@ -2566,6 +2571,7 @@ h2 img {
     }
 
     .footer-links {
+        justify-content: center;
         order: 3;
         width: 100%;
     }
